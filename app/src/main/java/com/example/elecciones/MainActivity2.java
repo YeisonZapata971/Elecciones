@@ -8,7 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     private EditText edadEditText;
     private Button votarButton;
@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
                     if (edad >= 18) {
                         realizarVoto();
                     } else {
-                        Toast.makeText(MainActivity.this, "Debe ser mayor de edad para votar", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity2.this, "Debe ser mayor de edad para votar", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(MainActivity.this, "Ingrese su edad", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity2.this, "Ingrese su edad", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         // Luego, incrementa el contador de votos del candidato elegido.
         // En este ejemplo, se simula el voto de manera simple.
         votosCandidato1++;
-        Toast.makeText(MainActivity.this, "¡Voto registrado!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity2.this, "¡Voto registrado!", Toast.LENGTH_SHORT).show();
     }
 
     private void calcularGanador() {
